@@ -8,11 +8,11 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/Ingordigia/homeassistant-addon-setecna/models"
-	"github.com/Ingordigia/homeassistant-addon-setecna/pkg/helpers"
-	"github.com/Ingordigia/homeassistant-addon-setecna/pkg/homeassistant"
-	"github.com/Ingordigia/homeassistant-addon-setecna/pkg/mqtt"
-	"github.com/Ingordigia/homeassistant-addon-setecna/pkg/scraper"
+	"github.com/luca-nardelli/homeassistant-addon-setecna/models"
+	"github.com/luca-nardelli/homeassistant-addon-setecna/pkg/helpers"
+	"github.com/luca-nardelli/homeassistant-addon-setecna/pkg/homeassistant"
+	"github.com/luca-nardelli/homeassistant-addon-setecna/pkg/mqtt"
+	"github.com/luca-nardelli/homeassistant-addon-setecna/pkg/scraper"
 )
 
 var systemID string = os.Getenv("REG_SYSTEM_ID")
@@ -38,6 +38,9 @@ func main() {
 		log.Println("readonly parameter non specified, default is true")
 		isReadonly = true
 	}
+
+	log.Print("MQTT params: ", mqttHost, mqttUser)
+	log.Print("Config: ", systemID, username)
 
 	mqttServer := new(mqtt.MqttServer)
 	mqttServer.Connect(mqttHost, mqttUser, mqttPassword)

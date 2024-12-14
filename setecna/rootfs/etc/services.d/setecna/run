@@ -38,5 +38,6 @@ export READONLY
 ## Print the systemID the user supplied, defaults to ""
 bashio::log.info "${systemID:=""}"
 
+echo "Starting"
 ## Run your program
 exec /usr/bin/app

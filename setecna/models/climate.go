@@ -8,7 +8,7 @@ package models
 import (
 	"fmt"
 
-	"github.com/Ingordigia/homeassistant-addon-setecna/pkg/helpers"
+	"github.com/luca-nardelli/homeassistant-addon-setecna/pkg/helpers"
 )
 
 type ClimateWithHumidity struct {

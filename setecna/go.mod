@@ -1,4 +1,4 @@
-module github.com/Ingordigia/homeassistant-addon-setecna
+module github.com/luca-nardelli/homeassistant-addon-setecna
 
 go 1.20
 

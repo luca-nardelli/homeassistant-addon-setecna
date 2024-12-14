@@ -11,8 +11,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/Ingordigia/homeassistant-addon-setecna/models"
-	"github.com/Ingordigia/homeassistant-addon-setecna/pkg/mqtt"
+	"github.com/luca-nardelli/homeassistant-addon-setecna/models"
+	"github.com/luca-nardelli/homeassistant-addon-setecna/pkg/mqtt"
 	broker "github.com/eclipse/paho.mqtt.golang"
 	"golang.org/x/net/html"
 	"golang.org/x/net/publicsuffix"

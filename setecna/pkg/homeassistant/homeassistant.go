@@ -6,9 +6,9 @@ import (
 	"log"
 	"strconv"
 
-	"github.com/Ingordigia/homeassistant-addon-setecna/models"
-	"github.com/Ingordigia/homeassistant-addon-setecna/pkg/helpers"
-	"github.com/Ingordigia/homeassistant-addon-setecna/pkg/mqtt"
+	"github.com/luca-nardelli/homeassistant-addon-setecna/models"
+	"github.com/luca-nardelli/homeassistant-addon-setecna/pkg/helpers"
+	"github.com/luca-nardelli/homeassistant-addon-setecna/pkg/mqtt"
 )
 
 func CreateClimates(responseMap map[string]string, systemID string) (msgs mqtt.Messages) {

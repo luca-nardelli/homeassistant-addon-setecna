@@ -1,9 +1,9 @@
 # https://developers.home-assistant.io/docs/add-ons/configuration#add-on-config
-name: Setecna REG system
-version: "1.1.0"
+name: Setecna REG system (fork)
+version: "1.1.9"
 slug: setecna
 description: Setecna REG system web integration
-url: "https://github.com/Ingordigia/homeassistant-addon-setecna"
+url: "https://github.com/luca-nardelli/homeassistant-addon-setecna"
 arch:
   - armhf
   - armv7
@@ -27,4 +27,4 @@ schema:
   adv_int: bool
 services:
   - mqtt:need
-image: "ghcr.io/ingordigia/{arch}-setecna-addon"
+image: "ghcr.io/luca-nardelli/{arch}-setecna-addon"
